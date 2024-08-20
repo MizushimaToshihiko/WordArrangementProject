@@ -20,11 +20,14 @@ def arrange_words(words):
     output_lines.append(f"                                 {arrangement['4援助者']}")
     output_lines.append("")
     output_lines.append("3主人公の過去: 1主人公の現在: 2主人公の近い未来: 6結末(目的):")
-    output_lines.append(f"   {arrangement['3主人公の過去']}             {arrangement['1主人公の現在']}           {arrangement['2主人公の近い未来']}          {arrangement['6結末(目的)']}")
+    output_lines.append(f"   {arrangement['3主人公の過去']}" + 
+                         "             {arrangement['1主人公の現在']}" +
+                         "           {arrangement['2主人公の近い未来']}" +
+                         "          {arrangement['6結末(目的)']}")
     output_lines.append("")
     output_lines.append("                               5敵対者:")
     output_lines.append(f"                                  {arrangement['5敵対者']}")
-    
+
     return "\n".join(output_lines)
 
 def main():
